@@ -5,10 +5,11 @@ services:
 			image: mongo
 			container_name: chatgptweb-mongo
 			restart: unless-stopped
+			privileged: true
 			ports:
-				- '27017:27017'
+				- 27017:27017
 			expose:
-				- '27017'
+				- 27017
 			volumes:
 				- mongodb:/data/db
 			environment:
