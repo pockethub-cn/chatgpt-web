@@ -62,6 +62,8 @@ services:
 
   database:
     image: mongo
+    container_name: chatgptweb-database
+    restart: unless-stopped
     ports:
       - '27017:27017'
     expose:
