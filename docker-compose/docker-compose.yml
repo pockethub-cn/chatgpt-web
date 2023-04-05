@@ -3,7 +3,7 @@ version: '3'
 services:
 	database:
 			image: mongo
-			container_name: chatgptweb-database
+			container_name: chatgptweb-mongo
 			restart: unless-stopped
 			ports:
 				- '27017:27017'
